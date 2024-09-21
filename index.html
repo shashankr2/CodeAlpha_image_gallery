@@ -1,96 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>mangata and gallo</title>
-    <!--link to css-->
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
-      <a href="#"><img id="logo" src="Asset 1@3x.png" /></a>
+      <h1>Image Gallery</h1>
+      <br /><br />
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">products</a></li>
-        <li><a href="aboutus.html">about us </a></li>
-        <li><a href="contactus.html">contact us </a></li>
-      </ul>
-    </nav>
-    <main>
-      <section class="Home" id="Home">
-        <article>
-          <div class="main-banner">
-            <img src="banner.png" alt="Main Banner - Jewelry Store" />
-            <div class="banner-text">
-              <h1>Where Elegance Meets Craftsmanship</h1>
-              <p>
-                premium handcrafted jewellerys From Us to You, with Love and
-                Luxury
-              </p>
-              <br />
-              <br />
-              <a href="index.html" class="cta-button">Shop Now</a>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section>
-        <article>
-          <img id="image" src="img2.jpg" />
-          <h2>Elevate Your Style with Our Exquisite Necklaces</h2>
-          <p>
-            Discover the art of adornment with our stunning collection of
-            necklaces, where elegance meets individuality. Each piece is
-            meticulously crafted to drape gracefully, capturing light and
-            attention with every movement. Whether it's a delicate pendant that
-            whispers sophistication or a statement choker that boldly commands
-            the room, our necklaces are designed to complement your unique
-            essence. Embrace the allure of timeless designs and let your
-            neckline tell a story of grace, beauty, and unparalleled
-            craftsmanship
-          </p>
-        </article>
-        <article>
-          <img id="image" src="ring.jpg" />
-          <h2>Rings that Speak Volumes of Elegance and Passion</h2>
-          <p>
-            Wrap your fingers in luxury with our captivating rings, designed to
-            be more than just accessories. From the delicate sparkle of a
-            solitaire to the intricate allure of multi-stone settings, our rings
-            are crafted to celebrate life’s most precious moments. Made with the
-            finest metals and gems, each ring embodies a blend of modern design
-            and timeless tradition. Whether it’s a token of love, a promise, or
-            a statement of style, our rings are the perfect symbol of your most
-            cherished memories.
-          </p>
-        </article>
-        <article>
-          <img id="image" src="wallpaperflare-cropped.jpg" />
-          <h2>Bangles That Redefine Grace with Every Movement</h2>
-          <p>
-            Add a touch of sophistication and charm to your wrists with our
-            exquisite range of bangles. Each piece is a work of art, designed to
-            reflect the vibrant personality of the wearer. Crafted with
-            precision and available in an array of designs, from minimalistic
-            and sleek to bold and ornate, our bangles are perfect for every
-            occasion. Layer them up for a chic, contemporary look or wear them
-            solo for a classic touch of elegance. Let your hands speak volumes
-            with bangles that are as unique and beautiful as you are
-          </p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <div>
-        <a href="#"><img id="flogo" src="Asset 1@3x.png" /></a>
-      </div>
-      <div>
-        <p>
-          copyright - mangata gallo <br />
-          all rights reserved
-        </p>
-      </div>
-    </footer>
+    <div class="gallery">
+      <img src="image1.jpg" alt="Image 1" class="gallery-item" />
+      <img src="image2.jpg" alt="Image 2" class="gallery-item" />
+      <img src="image3.jpg" alt="Image 3" class="gallery-item" />
+      <img src="image4.jpg" alt="Image 4" class="gallery-item" />
+      <img src="image5.jpg" alt="Image 5" class="gallery-item" />
+      <img src="image6.jpg" alt="Image 6" class="gallery-item" />
+      <img src="image7.jpg" alt="Image 7" class="gallery-item" />
+      <img src="image8.jpg" alt="Image 8" class="gallery-item" />
+      <img src="image9.jpg" alt="Image 9" class="gallery-item" />
+      <img src="image10.jpg" alt="Image 10" class="gallery-item" />
+    </div>
+
+    <!-- Modal for enlarged image -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="caption"></div>
+      <!-- navigation-->
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
+
